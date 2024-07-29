@@ -1,0 +1,12 @@
+spring:
+  application.name: demo
+  schema_name: demo_test
+  jpa.properties:
+    hibernate:
+      default_schema: ${spring.schema_name}
+      hbm2ddl:
+        auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dbdemo
+    username: ridwan
+    password: ridwan
